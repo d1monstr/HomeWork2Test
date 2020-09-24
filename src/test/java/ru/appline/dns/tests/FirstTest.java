@@ -8,6 +8,7 @@ public class FirstTest extends BaseTests{
 
     @Test
     public void test(){
+
         app.getStartPage().searchToSearchPage("playstation")
                 .chooseResult("playstation 4 slim black")
                 .addToBufferPrices()
@@ -25,5 +26,6 @@ public class FirstTest extends BaseTests{
                 .plusProduct("playstation")
                 .plusProduct("playstation")
                 .returnDeletedProduct();
+
     }
 }
