@@ -1,4 +1,4 @@
-package dns.objects;
+package ru.appline.frameworks.dns.objects;
 
 public class Product {
 
@@ -9,6 +9,13 @@ public class Product {
     public Product(String productName, int price) {
         this.productName = productName;
         this.price = price;
+        this.guarant = "-------------------";
+    }
+
+    public Product(String productName, int price, String guarant) {
+        this.productName = productName;
+        this.price = price;
+        this.guarant = guarant;
     }
 
     public String getProductName() {
